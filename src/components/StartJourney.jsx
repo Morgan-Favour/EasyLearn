@@ -1,6 +1,7 @@
     import React from 'react';
     import Slider from "@ant-design/react-slick";
     import '../style/StartJourney.css';
+    
 
     export default function StartJourney(){
     return (

@@ -6,6 +6,7 @@
 
 body {
   background-color: #012e1f;
+  font-family: 'Inter', sans-serif;
 }
 
 .hero-container {
@@ -155,7 +156,7 @@ body {
   }
 
   .hero-text h1 {
-    font-size: 36px;
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -184,7 +185,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-text h1 {
-    font-size: 28px;
+    font-size: 1.5rem;
   }
 
   .hero-text p {

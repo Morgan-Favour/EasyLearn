@@ -47,21 +47,29 @@
   }
   
   /* Placeholder for avatars (replace with actual images) */
-
+  .avatar-1 { background: url("../assets/livesession.webp") no-repeat center; background-size: cover; }
+  .avatar-2 { background: url("../assets/livesession.webp") no-repeat center; background-size: cover; }
+  .avatar-3 { background: url("../assets/livesession.webp") no-repeat center; background-size: cover; }
+  .avatar-4 { background: url("../assets/livesession.webp") no-repeat center; background-size: cover; }
+  .avatar-5 { background: url("../assets/livesession.webp") no-repeat center; background-size: cover; }
+  .avatar-6 { background: url("../assets/livesession.webp") no-repeat center; background-size: cover; }
   
   .start-button {
-    border: none;
     text-decoration: none;
-    background-color: #012e1f;
+    border: none;
     color: white;
-    padding: 15px 25px;
-    border-radius: 20px;
+    font-size: 18px;
     font-weight: 500;
-    transition: background-color 0.3s;
+    padding: 10px 20px;
+    background-color: #012e1f;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px   rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s ease;
   }
   
   .start-button:hover {
-    background-color: #f7a102;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
   }
   
   /* Sparkle Effect */
