@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #012e1f;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  position: relative;
+  min-height: 65vh;
+}
+
+/* Decorative Scribbles */
+.hero-container::before,
+.hero-container::after {
+  content: '';
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-container::before {
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  left: 0;
+  background: url('path-to-scribble-circle.png');
+}
+
+.hero-container::after {
+  width: 80px;
+  height: 80px;
+  top: 50px;
+  right: 0;
+  background: url('path-to-scribble-arrow.png');
+}
+
+.hero-text {
+  font-family: "Inter", sans-serif;
+  flex: 1;
+  max-width: 50%;
+  padding-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0 0 30px;
+}
+
+.hero-button {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  color: #012e1f;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #f7a102;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.sparkle {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background: url('path-to-sparkle-icon.png') no-repeat center;
+  background-size: contain;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+.courses-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: #fff;
+  color: #012e1f;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .hero-container::before,
+  .hero-container::after {
+    display: none; /* Hide decorative elements on mobile */
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+  }
+
+  .courses-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}

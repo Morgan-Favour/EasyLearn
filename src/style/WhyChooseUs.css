@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* General styling for the component */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.why-choose-us {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff7e6;
+    padding: 5rem 0;
+}
+
+.why-choose-us .text {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-shadow:
+        -1px -1px 0 #012e1f,
+        1px -1px 0 #012e1f,
+        -1px 1px 0 #012e1f,
+        2px 1px 0 #012e1f;
+}
+
+/* Section headings */
+.why-choose-us h2 {
+    font-size: 1.5rem;
+    color: #012e1f;
+}
+
+/* Values Section */
+.values-section {
+    margin-bottom: 7rem;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card h3 {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    color: #012e1f;
+}
+
+.value-card p {
+    font-size: 0.9rem;
+    color: #012e1f;
+}
+
+/* Placeholder for icons (replace with actual images or SVGs) */
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-radius: 50%;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    margin-bottom: 50px;
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    width: 200px;
+    text-align: center;
+}
+
+.step-number {
+    font-size: 2.5rem;
+    color: #fff;
+    /* White interior */
+    margin-bottom: 10px;
+    text-shadow:
+        -1px -1px 0 #012e1f,
+        1px -1px 0 #012e1f,
+        -1px 1px 0 #012e1f,
+        2px 1px 0 #012e1f;
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.step-card p {
+    font-size: 1.1rem;
+    color: #012e1f;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #ed9e3f;
+    color: #012e1f;
+    padding: 20px 0;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.stat h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #012e1f;
+    margin: 0;
+    text-shadow:
+        -1px -1px 0 #012e1f,
+        1px -1px 0 #012e1f,
+        -1px 1px 0 #012e1f,
+        1px 1px 0 #012e1f;
+}
+
+.stat p {
+    font-size: 1.1rem;
+    margin: 5px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .why-choose-us {
+        text-align: left;
+    }
+
+    .why-choose-us .text {
+        padding-left: 1rem;
+        padding-right: 2.5rem;
+    }
+
+    .step-number {
+        display: none;
+    }
+
+    .values-section {
+        padding-left: 1rem;
+        padding-right: 2.5rem;
+    }
+
+    .how-it-works-section {
+        align-items: flex-start; 
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 2.5rem;
+    }
+
+    .values-grid,
+    .steps-grid,
+    .stats-section {
+        flex-direction: column;
+        align-items: flex-start; /* Fixed to align items to the left */
+    }
+
+    .values-section > h2 {
+        padding-bottom: 2rem;
+    }
+
+    .value-card,
+    .step-card {
+        width: 90%;
+        padding: 0;
+        text-align: left; /* Align content inside step-card to the left */
+    }
+
+    .step-icon {
+        margin: 0 0 15px; /* Align icon to the left on mobile */
+    }
+
+    .stats-section {
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        /* margin-left: -1rem; */
+    }
+}

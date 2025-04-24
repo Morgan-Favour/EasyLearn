@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.faq-container {
+    font-family: "Inter", sans-serif;
+    background-color: #fff7e6;
+    padding: 5rem;
+  }
+  .faq-container h3{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: #fff; /* White interior */
+    margin-bottom: 10px;
+    text-shadow: 
+      -1px -1px 0 #012e1f,  
+       1px -1px 0 #012e1f,
+      -1px  1px 0 #012e1f,
+       2px  1px 0 #012e1f;
+  }
+  
+  .faq-container h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: #012e1f;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border-radius: 2.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .faq-question.open {
+    background-color: #012e1f;
+    color: #fff;
+  }
+  
+  .faq-question.closed {
+    /* background-color: #fff; */
+    color: #012e1f;
+  }
+  
+  .faq-question span {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .toggle-btn {
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .toggle-btn.open {
+    color: #012e1f;
+    background-color: #fff;
+  }
+  
+  .toggle-btn.closed {
+    color: #fff;
+    background-color: #012e1f;
+  }
+  
+  .faq-answer {
+    background-color: #012e1f;
+    padding: 3rem 20px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #fff;
+    border-top: 1px solid #ddd;
+    animation: slideDown 0.3s ease;
+  }
+  
+  @keyframes slideDown {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: auto;
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .faq-container{
+        padding: 2rem;
+    }
+    .faq-container h2{
+        font-size: 2rem;
+    }
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .faq-question {
+      font-size: 1rem;
+    }
+  }
